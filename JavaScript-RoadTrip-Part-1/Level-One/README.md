@@ -1,5 +1,8 @@
-# 1.1 Booleans, The True Path
-Video
+# Level 1 - The Cliffs of Value
+"The Last Great Uncharted Frontier"
+
+## 1.1 Booleans, The True Path
+Video Lecture
 
 * The Prompt & some basic numbers
 * Operators
@@ -55,9 +58,69 @@ _Solution:_
 5!==6
 ```
 ## 1.7 Strings on Signs
-Video
+Video Lecture
 
 * Strings
 * These are a few of my favorite...strings
 * Special characters inside strings
 * String Comparisons
+
+
+## 1.8 Building Strings
+_Task:_
+Create a String of your first and last name, with the first letter of each word capitalized, and each word separated by a space.
+
+_Solution:_
+```
+"Brahmadut Ramkissoon"
+```
+
+## 1.9 Special Characters in Strings
+_Task:_
+Build the following output in one String, using special characters for the newline, tab stop, and quotation marks:
+
+    Quoth the raven:
+        "Nevermore!"
+
+_Solution:_
+```
+"Quoth the raven:\n\t\"Nevermore!\""
+```
+
+## 1.10 Booleans with Strings
+_Task:_
+Build a Boolean expression that compares two Strings and evaluates to true.
+
+    Quoth the raven:
+        "Nevermore!"
+
+_Solution:_
+```
+"CompareOne" === "CompareOne"
+```
+
+
+## 1.11 Concatenating a Mystery String
+_Task:_
+Use the + operator to concatenate the following words and numbers. All values need to be separated by a space:
+
+- "eight"
+- 5
+- "six"
+- "two"
+- 3
+- 7
+The resulting string output should be: `"eight 5 six two 3 7"`
+
+_Solution:_
+```
+"eight " + 5 + " six " + "two " + 3 + " " + 7 
+```
+## 1.12 Accessing a String's Length
+_Task:_
+Create a String with exactly 33 characters. Then, access the length of your String with the .length property.
+
+_Solution:_
+```
+"Create a String with exactly 33..".length
+```

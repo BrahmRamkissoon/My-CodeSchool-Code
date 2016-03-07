@@ -3,11 +3,6 @@
 ## 1.1 Booleans, The True Path
 Video Lecture
 
-* The Prompt & some basic numbers
-* Operators
-* Order of Operations: PEMDAS
-* Comparators
-
 ## 1.2 Basic Operations
 _Task:_
 In the console, enter any expression which uses `+`,` -`, `*`, or `/`, and whose answer evaluates to `36`.
@@ -58,12 +53,6 @@ _Solution:_
 ```
 ## 1.7 Strings on Signs
 Video Lecture
-
-* Strings
-* These are a few of my favorite...strings
-* Special characters inside strings
-* String Comparisons
-
 
 ## 1.8 Building Strings
 _Task:_

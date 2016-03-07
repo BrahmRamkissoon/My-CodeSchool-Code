@@ -3,10 +3,6 @@
 ## 2.1 Variable Discovery
 Video Lecture
 
-* Changing variable contents
-* Using variables
-* Incrementing and decrementing
-
 ## 2.2 Variable I
 _Task:_
 Declare a variable whose name is age and assign your own age to it using a numerical value.
@@ -28,12 +24,6 @@ var ageIn5Years = age + 5;
 
 ## 2.4 Variable Exploration
 Video Lecture
-
-* Variables store strings, too
-* Using variable names with strings
-* More comparisons with variables
-* Finding Specific Characters within strings
-* Variables help organize data 
 
 ## 2.5 Variable III
 _Task:_

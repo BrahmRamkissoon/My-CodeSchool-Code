@@ -21,7 +21,7 @@ _Solution:_
 </html>
 ```
 
-## 3.3 Using File Paths to REach a Source File
+## 3.3 Using File Paths to Reach a Source File
 _Task:_
 In the index.html file, add a `<script>` tag inside the `<head>` section to tell our HTML file that we want to execute some JavaScript code.
 

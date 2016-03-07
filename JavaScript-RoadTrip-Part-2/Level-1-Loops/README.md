@@ -87,7 +87,7 @@ while (monthNumber <= monthsToPrint) {
 ```
 
 _Solution:_
-```
+```javascript
 var numSheep = 4;
 var monthsToPrint = 12;
 

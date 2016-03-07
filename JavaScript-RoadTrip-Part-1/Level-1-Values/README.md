@@ -1,4 +1,5 @@
 # Level 1 - Values
+Learn to manipulate values on the console.
 
 ## 1.1 Booleans, The True Path
 Video Lecture
@@ -7,7 +8,7 @@ Video Lecture
 _Task:_
 In the console, enter any expression which uses `+`,` -`, `*`, or `/`, and whose answer evaluates to `36`.
 
-_Solution_
+_Solution:_
 ```
 ((5+4)/(4-1))*12
 ```

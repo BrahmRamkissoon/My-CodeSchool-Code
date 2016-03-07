@@ -1,4 +1,5 @@
 # Level 3 - Files
+Create JS files and source them within HTML code.
 
 ## 3.1 Script Tags
 Video Lecture

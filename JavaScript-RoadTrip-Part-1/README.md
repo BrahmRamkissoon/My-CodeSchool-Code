@@ -4,9 +4,9 @@
 An introduction to the basics of JavaScript.
 
 ## Course Description
-JavaScript Road Trip combines educational videos, interactive challenges, and coding in the browser to help you learn the basics of the JavaScript language in approximately two hours. 
+Build a foundation of JavaScript syntax and learn how to use values, variables, and files. 
 
-### Table of Contents
-1. **Values** Learn to manipulate values on the console.
-2. **Variables** Review how to store and use data with variables.
-3. **Files** Create JS files and source them within HTML code.
+### Overview
+1. **Values** 
+2. **Variables** 
+3. **Files** 

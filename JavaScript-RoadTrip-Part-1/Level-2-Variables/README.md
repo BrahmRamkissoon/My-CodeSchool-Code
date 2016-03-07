@@ -1,4 +1,5 @@
 # Level 2 - Variables
+Review how to store and use data with variables.
 
 ## 2.1 Variable Discovery
 Video Lecture

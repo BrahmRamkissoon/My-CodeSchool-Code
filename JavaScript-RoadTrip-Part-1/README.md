@@ -1,8 +1,9 @@
-# JavaScript RoadTrip
-An introduction to the basics of JavaScript.
-3 Videos, 15 Code Challenges, 3 Badges
+# JavaScript RoadTrip Part 1
+[Course Details](https://www.codeschool.com/courses/javascript-road-trip-part-1) | Instructor: [Jason Millhouse](https://twitter.com/itsthrillhouse)
 
-## About
+An introduction to the basics of JavaScript.
+
+## Course Description
 JavaScript Road Trip combines educational videos, interactive challenges, and coding in the browser to help you learn the basics of the JavaScript language in approximately two hours. 
 
 ### Table of Contents

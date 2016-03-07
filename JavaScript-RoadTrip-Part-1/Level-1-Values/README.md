@@ -1,5 +1,4 @@
-# Level 1 - The Cliffs of Value
-"The Last Great Uncharted Frontier"
+# Level 1 - Values
 
 ## 1.1 Booleans, The True Path
 Video Lecture

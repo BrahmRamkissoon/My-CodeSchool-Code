@@ -1,5 +1,5 @@
 # JavaScript RoadTrip Part 2
-[Course Details](https://www.codeschool.com/courses/javascript-road-trip-part-1) | Instructor: [Jason Millhouse](https://twitter.com/itsthrillhouse)
+[Course Details](https://www.codeschool.com/courses/javascript-road-trip-part-2) | Instructor: [Jason Millhouse](https://twitter.com/itsthrillhouse)
 
 A continued introduction to the very basics of the JavaScript language.
 

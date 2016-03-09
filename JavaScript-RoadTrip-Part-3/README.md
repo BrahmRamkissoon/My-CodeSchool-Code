@@ -9,6 +9,6 @@ Continue building intermediate skills within the JavaScript web programming lang
 ### Overview
 1. **Function Expressions**
 2. **Closures**
-3. **Load Order**
+3. **Hoisting Load Order**
 4. **Objects**
 5. **Inheritance**

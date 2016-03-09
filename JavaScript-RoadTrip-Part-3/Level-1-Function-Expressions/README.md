@@ -128,32 +128,70 @@ Video Lecture
 
 ## 1.7 Using Map With Arrays
 _Task:_
+from the customer terminal that they want to use to customize greetings for each of their passengers. But the data consists of an array with many subarrays where the first and last names of each passenger are split up.
 
+They want to take the passengers array and convert those subarrays into strings that contain the first and last name for each passenger.
+
+1. Create a modifiedNames variable to store our new data.
+2. Assign passengers.map() to the modifiedNames variable. This will allow us to pass in a function to be used on every element in the array.
+3. Pass an anonymous function to map().
+4. The anonymous function should take in arrayCell as a parameter and use that to return a string with the first and last name for a passenger. In other words, if you were to pass in a ["Jason", "Millhouse"] array, the function should return a "Jason Millhouse" string.
 
 _Solution:_
 ```javascript
+var passengers = [ ["Thomas", "Meeks"],
+                   ["Gregg", "Pollack"],
+                   ["Christine", "Wong"],
+                   ["Dan", "McGaw"] ];
 
+
+var modifiedNames = passengers.map(function(arrayCell){ return arrayCell[0] + " " + arrayCell[1];});
 ```
-```
+
 
 ## 1.8 Using Map With Arrays II
 _Task:_
+The passengers have arrived at Maple Mountain! Take the modifiedNames array that you produced in the last challenge, and map a new anonymous function on it.
 
+The function should alert the following message to the screen for each passenger in turn:
+
+    Yo, <name>!
+
+Note: Since we are creating an alert message, you won’t need to return a value or create any new variables. Normally you would use map’s return value, but this is just for practice.
 
 _Solution:_
 ```javascript
+var modifiedNames = [ "Thomas Meeks",
+                      "Gregg Pollack",
+                      "Christine Wong",
+                      "Dan McGaw" ];
 
-```
+modifiedNames.map( function(hello){
+	alert("Yo, " + hello[0]);
+});
 ```
 
 ## 1.9 Expressions Inside Arrays
 _Task:_
+The folks over at Poplar Puzzlers need an array of functions for one of their puzzles. They’ve requested your help in making the array, which they would like to be called puzzlers. The cells of the array should each contain a function, and these functions–well, what they return–are listed here in order. Each function has one parameter. Note input below represents the parameter, and you will need to convert the math formulas to JavaScript:
 
+1. Returns 3 * input - 8
+2. Returns (input + 2)3
+3. Returns input2 - 9
+4. Returns input % 4
+
+Use your knowledge of arrays and anonymous function expressions to build this array of functions.
+
+Note: Use parentheses with your return statements if you’re having trouble with the order of operations.
 
 _Solution:_
 ```javascript
-
-```
+var puzzlers = [
+                function(input){ return 3 * input - 8; },
+                function(input){ return Math.pow(input + 2, 3); },
+                function(input){ return Math.pow(input, 2) - 9; },
+                function(input){ return input % 4; },		
+];
 ```
 
 ## 1.10 Returning Functions and Immediate Invocation
@@ -161,27 +199,76 @@ Video Lecture
 
 ## 1.11 Choose Their Own Adventure
 _Task:_
+Ash Adventures has three different “adventures” to choose from, and customers are prompted for a number at a terminal. The number is stored as userChoice and then passed into a function called adventureSelector.
 
+Inside the function, you need to return an anonymous function based on the number that the user selected. Each of your three anonymous functions should contain a boarding alert message:
+
+If the user selects 1:
+
+    You selected the Vines of Doom!
+    
+If the user selects 2:
+
+    Looks like you want the Lake of Despair!
+    
+If the user selects 3:
+
+    The Caves of Catastrophe!
+    
+Assume the user’s choice has already been stored as 1, 2, or 3, and is passed in as the userChoice parameter. Make sure that you return all message functions as anonymous functions, instead of stored in variables. You do not need to call the function at the end.
 
 _Solution:_
 ```javascript
-
-```
+function adventureSelector(userChoice) {
+  // return anonymous functions inside conditional blocks
+  if( userChoice === 1){ 
+    return function(num){ alert("You selected the Vines of Doom!"); }; 
+  }
+  else if( userChoice === 2){ 
+    return function(num){ alert("Looks like you want the Lake of Despair!"); }; 
+  }
+  else if(userChoice === 3){ 
+    return function(num){ alert("The Caves of Catastrophe!"); }; 
+  }
+}
 ```
 
 ## 1.12 Immediately-Invoked Adventure
 _Task:_
+Write one line of code that calls adventureSelector, passes it 3 as an argument, and that immediately invokes the function that gets returned. Here’s adventureSelector for your reference:
 
+```javascript
+function adventureSelector(userChoice) {
+  if (userChoice == 1) {
+    return function() {
+      alert("You selected the Vines of Doom!");
+    };
+  } else if (userChoice == 2) {
+    return function() {
+      alert("Looks like you want the Lake of Despair!");
+    };
+  } else if (userChoice == 3) {
+    return function() {
+      alert("The Caves of Catastrophe!");
+    };
+  }
+}
+```
 
 _Solution:_
 ```javascript
-
-```
+adventureSelector(3)();
 ```
 
 ## 1.13 Queue Builder
 _Task:_
+The devs at Poplar Puzzles would like you to treat an array of functions like a Queue, passing the result of each function into the next until the Queue is empty. They’ve sent you the puzzlers Queue of functions, and the following instructions:
 
+1. Build a function and assign it to a variable named applyAndEmpty.
+2. The function should take in an input number and a queue of functions as parameters.
+3. Using a for loop, call the functions in the queue in order with the input number, where the results of each function becomes the next function’s input.
+4. Once done this loop, return from applyAndEmpty the final function’s result. Additionally, the queue should be empty at this point.
+5. Lastly, call the applyAndEmpty function using the provided start variable and the puzzlers Queue as arguments, and alert the result.
 
 _Solution:_
 ```javascript

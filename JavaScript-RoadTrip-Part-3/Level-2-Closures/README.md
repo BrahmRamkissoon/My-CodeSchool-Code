@@ -6,7 +6,7 @@ Video Lecture
 
 ## 2.2 Tracing a Closure I
 _Task:_
-
+Over at Maple Mountain, the dev team has received some name data 
 
 _Solution:_
 ```javascript

@@ -1,4 +1,4 @@
-# Level 3 - Load Order
+# Level 3 - Hoisting Load Order
 Build an awareness of the pitfalls of load order within a scope.
 
 ## 3.1 Hoisting

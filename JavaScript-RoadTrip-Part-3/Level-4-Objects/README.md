@@ -453,7 +453,41 @@ Use the hints as you get stuck!
 
 _Solution:_
 ```javascript
+var vehicle3 = {
+  type: "Submarine", capacity: 8, storedAt: "Underwater Outpost",
+  ranger1: {name: "Gregg Pollack", skillz: "Lasering", dayOff: "Friday"},
+  ranger2: {name: "Bijan Boustani", skillz: "Working", dayOff: "Saturday"},
+  ranger3: {name: "Ashley Smith", skillz: "Torpedoing", dayOff: "Friday"},
+  ranger4: {name: "Mark Krupinski", skillz: "Sniping", dayOff: "Wednesday"},
+  numRangers: 4
+};
 
+var relieveDuty = function ( vehicle, day ){
+	var offDuty = [];
+  var onDuty = [];
+  
+  for(var i=1; i <= vehicle.numRangers; i++){       
+    // check if ranger's dayOff = day
+    if (vehicle["ranger"+i].dayOff === day) {
+      offDuty.push(vehicle["ranger"+i]);      
+    } else{
+    	onDuty.push(vehicle["ranger"+i]);
+    }  
+    
+    delete vehicle["ranger"+i];
+  }
+  // adjust the numRangers property
+  vehicle.numRangers -= offDuty.length;
+  
+  // shift all onDuty rangers to vehicle object
+  for (var j = 1; j <= vehicle.numRangers; j++) {
+    vehicle["ranger"+j] = onDuty.shift();
+  }
+  
+  return offDuty;
+}; 
+
+relieveDuty(vehicle3, "Friday");
 ```
 
 ## 4.16 Using Objects
@@ -461,28 +495,101 @@ Video Lecture
 
 ## 4.17 Enumeration I
 _Task:_
+The devs at Lighthouse Rock have received a shipment of spearguns for use in the battle against the pirates, and they need to know which spearguns have arrived.
 
+1. Build a function called listGuns that accepts a guns object as a parameter.
+2. Inside that function, use a for in loop to loop through each speargun in the guns object.
+3. Log each speargun in to the console.
+4. After your function is built, call listGuns and pass in the rockSpearguns object.
 
 _Solution:_
 ```javascript
+var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
 
+// build listGuns
+var listGuns = function ( guns ) {
+	
+  for ( var speargun in guns ){
+  	console.log(speargun);  
+  }
+
+};
+
+// call listGuns and pass in rockSpearguns
+listGuns(rockSpearguns);
 ```
 
 ## 4.18 Enumeration II
 _Task:_
+We’ve got our list of spearguns, but the problem is that the ranger-devs need to know what heft property each speargun has in order to know which one is right for their individual aiming styles.
 
+Modify the log message in your listGuns function so that it follows the format below. You’ll need to use bracket notation strategically to access the heft property for the current speargun in guns.
+
+```
+Behold! `<speargun name>`, with `<heft style>` heft!
+Note: You only need to change the console message for this challenge, and you do not need to change any of the other provided code.
+```
 
 _Solution:_
 ```javascript
+var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
+
+function listGuns(guns) {
+  for (var speargun in guns) {
+    // modify the log message here
+    console.log("Behold! " + speargun +", with " + guns\[speargun]["heft"] + " heft!");
+  }
+}
+
+listGuns(rockSpearguns);
 
 ```
 
 ## 4.19 Enumeration III
 _Task:_
+The ranger-devs liked your listGuns function so much that they want it added to the rockSpearguns object.
 
+1. Rather than moving it directly inside the object, use bracket notation to convert the function into a "listGuns" property on the rockSpearguns object.
+2. Since the rockSpearguns object will now contain more than just spearguns, change all instances of your enumeration reference word to property instead of speargun.
+3. And since we’re working from within the function now, we no longer need to pass in guns as a parameter. Remove it so that we’re not passing any parameters, and then replace any other instance of guns with this.
+4. In order to ensure that only spearguns get printed in the console message, add a conditional inside the for loop to make sure that the message only gets logged if this\[property]["heft"] does not equal an undefined value.
+5. Lastly, change the function call at the bottom to use bracket notation along with parentheses to call the function on the rockSpearguns object.
+
+Note: Use bracket notation throughout this challenge. No dot notation allowed!
 
 _Solution:_
 ```javascript
+var rockSpearguns = {
+  Sharpshooter: {barbs: 2, weight: 10, heft: "overhand"},
+  Pokepistol: {barbs: 4, weight: 8, heft: "shoulder"},
+  Javelinjet: {barbs: 4, weight: 12, heft: "waist"},
+  Firefork: {barbs: 6, weight: 8, heft: "overhand"},
+  "The Impaler": {barbs: 1, weight: 30, heft: "chest"}
+};
 
+// convert listGuns function
+rockSpearguns["listGuns"] = function () {
+  for (var property in this) {
+    if (this[property]["heft"] !== undefined){
+    	console.log("Behold! " + property + ", with " +
+                	this[property]["heft"] + " heft!");
+    }
+  }
+};
+
+// call listGuns using bracket notation on rockSpearguns
+rockSpearguns\["listGuns"]();
 ```
 

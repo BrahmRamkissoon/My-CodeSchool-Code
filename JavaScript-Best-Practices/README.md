@@ -9,5 +9,5 @@ Become a more informed, conscientious user of JavaScript as you explore time-tes
 ### Overview
 1. **Syntax**
 2. **Performance**
-3. **Caution**
+3. **Common Pitfalls**
 4. **Modularity**

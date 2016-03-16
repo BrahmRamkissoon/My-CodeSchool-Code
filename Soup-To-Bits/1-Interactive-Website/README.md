@@ -1,7 +1,7 @@
 # SOUP TO BITS: Build an Interactive Website
-[Course Details](https://www.codeschool.com/screencasts/build-an-interactive-website-part-1) | Instructors: [Jon Friskics](https://twitter.com/jonfriskics) [Drew Barontini](https://twitter.com/drewbarontini)
+[Course Details](https://www.codeschool.com/screencasts/build-an-interactive-website-part-1) | Instructors: [Jon Friskics](https://twitter.com/jonfriskics), [Drew Barontini](https://twitter.com/drewbarontini)
 
-Building interactive websites involves defining the structure of your code and adding visual style. Play the five courses below and learn to bring together HTML, CSS, and JavaScript to create engaging web experiences
+Building interactive websites involves defining the structure of your code and adding visual style. Learn to bring together HTML, CSS, and JavaScript to create engaging web experiences
 
 ## Part 1
 Learn to start building a website by using HTML and CSS. In the first episode of the Build an Interactive Website series, we'll begin creating the HTML and CSS for a fictional Front-end News website, while following some best practices for structuring HTML, writing efficient CSS, and commenting our code along the way.

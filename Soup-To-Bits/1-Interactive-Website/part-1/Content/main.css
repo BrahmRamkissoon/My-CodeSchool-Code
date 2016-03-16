@@ -44,7 +44,8 @@ p {
 }
 
 a{
-    color: #ff4081;    
+    color: #ff4081;
+    transition: 0.2s ease-in-out;
 }
 
 a:active{}
@@ -110,6 +111,38 @@ a:focus{ color: #212121; }
     animation: flash 2s;
 }
 
+/*-----------------------------------------------
+*   Form
+-----------------------------------------------*/
+
+.form{
+    height: 0;
+    margin-bottom: 20px;
+    opacity: 0;    
+    visibility: hidden;
+}
+
+.form.is-visible{
+     height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s ease-in-out, visiblity 0.2s ease-in-out;
+}
+
+.form-label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-input{
+    border: 1px solid #b6b6b6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+}
 /*-----------------------------------------------
 *   Animation
 -----------------------------------------------*/

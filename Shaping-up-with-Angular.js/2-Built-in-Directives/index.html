@@ -14,7 +14,7 @@
       <div class="product row" ng-repeat='product in store.products'>
       <h3>
         {{product.name}}
-        <em class="pull-right">${{product.price}}</em>
+        <em class="pull-right">{{product.price | currency}}</em>
       </h3>
     </div>
     </div>

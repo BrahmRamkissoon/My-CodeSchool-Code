@@ -9,17 +9,14 @@
 </head>
 <body>
    <div ng-controller="StoreController as store">
-      <div class="product row">
-          <h3>
-              {{store.product.name}}
-              <em class="pull-right">{{store.product.price}}</em>
-          </h3>
-      </div>
+      <div class="product row" ng-repeat='product in store.products'>
+      <h3>
+        {{product.name}}
+        <em class="pull-right">${{product.price}}</em>
+      </h3>
+    </div>
 
    </div>
-   
-   
-    
     
     
     <!-- JavaScript Section -->

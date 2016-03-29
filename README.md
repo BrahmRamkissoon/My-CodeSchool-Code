@@ -6,4 +6,4 @@ My journey through various Code School courses.
 
 ![@BrahmRamkissoon](https://avatars0.githubusercontent.com/BrahmRamkissoon?&s=128)
 
-[GitHub](https://github.com/BrahmRamkissoon) | [Code School](https://www.codeschool.com/users/brahmramkissoon) | [LinkedIn](ca.linkedin.com/in/BrahmRamkissoon) | [E-Mail](mailto:brahm.ramkissoon@gmail.com)
+[GitHub](https://github.com/BrahmRamkissoon) | [Code School](https://www.codeschool.com/users/brahmramkissoon) | [LinkedIn](https://ca.linkedin.com/in/BrahmRamkissoon) | [E-Mail](mailto:brahm.ramkissoon@gmail.com)

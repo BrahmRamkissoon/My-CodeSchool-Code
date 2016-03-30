@@ -1,5 +1,5 @@
-# 1 - title
-short desc
+# 1 - Conjuring MongoDB
+Capture the mystical basics of MongoDB and try your hand at inserting and finding documents.
 
-- topic
-- topic
+- Introducing MongoDB
+- Queries and Datatypes

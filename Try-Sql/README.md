@@ -1,12 +1,12 @@
-# course-name
-[Course Details](link) | Instructor: [name](link)
+# Try SQL
+[Course Details](http://campus.codeschool.com/courses/try-sql) | Instructor: [Chari Clark](https://www.codeschool.com/blog/authors/chari-clark/)
 
-short desc.
+Learn basic database manipulation with SQL.
 
 ## Course Description
-long desc.
+Learn basic database manipulation skills using the SQL programming language.
 
 ### Overview
-1. **abc**
-2. **abc**
-3. **abc**
+1. **Introducting SQL**
+2. **Managing Data**
+3. **Databases and Tables**

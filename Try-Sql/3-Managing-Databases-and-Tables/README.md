@@ -1,5 +1,5 @@
-# 1 - title
-short desc
+# 1 - Managing Databases and Tables
+Discover basic concepts for creating and altering databases and tables.
 
-- topic
-- topic
+- Creating and Removing Databases and Tables
+- Manipulating Tables

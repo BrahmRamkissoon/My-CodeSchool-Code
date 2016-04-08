@@ -1,5 +1,6 @@
-# 1 - title
-short desc
+# 1 - Managing Data
+Find out how to add, revise, and remove data in an existing database.
 
-- topic
-- topic
+- Adding Data
+- Changing Current data
+- Removing Data

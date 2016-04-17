@@ -1,5 +1,5 @@
-# 1 - title
-short desc
+# 1 - Aggregate Functions
+Learn how to use SQL aggregate functions, including COUNT, SUM, and AVG, to do calculations on groups of data.
 
-- topic
-- topic
+- Common Aggregate Functions
+- Aggregates Within Clauses

@@ -1,5 +1,6 @@
-# 1 - title
-short desc
+# 4 - Inner Joins, Aliases, and Outer Joins
+Explore writing a single query to pull data from multiple tables and using aliases to create succinct queries.
 
-- topic
-- topic
+- Inner Joins
+- Aliases
+- Outer Joins
